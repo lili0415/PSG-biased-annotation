@@ -1,8 +1,0 @@
-cityscapesscripts
-imagecorruptions
-scipy
-sklearn
-timm
-pre-commit
-wandb
-pycocotools
