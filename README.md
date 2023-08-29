@@ -39,8 +39,10 @@ pip install -v -e .
 
 To explore and download their original Dataset:
 https://psgdataset.org/index.html
+
 Or you can directly download their original dataset using the link they provided: 
 https://entuedu-my.sharepoint.com/:f:/g/personal/jingkang001_e_ntu_edu_sg/EgQzvsYo3t9BpxgMZ6VHaEMBDAb7v0UgI8iIAExQUJq62Q?e=fIY3zh 
+
 And some pre-trained models that possibly be used:
 https://drive.google.com/drive/folders/1PY0JPCtkOS5Db8-CTFgORvWlOWsYiHfq?usp=sharing
 
