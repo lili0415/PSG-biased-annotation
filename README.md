@@ -1,5 +1,5 @@
 # BAI
-![image](new_structure.pdf)
+![image](intro.png)
 ## Steps to get started
 To setup the environment, we use `conda` to manage our dependencies.
 
