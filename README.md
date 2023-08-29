@@ -59,6 +59,8 @@ https://drive.google.com/file/d/1P2W2PXdRVuv9o_MUSudY7cY0jC3i1xHa/view?usp=shari
 
 Users should change the json filename in config/_base_/datasets/psg.py (Line 4-5) to './data/psg/psg.json'.
 
+![image](perfor.png)
+
 ## Testing
 Run the scripts below:
 ```bash
