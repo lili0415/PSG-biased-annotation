@@ -1,5 +1,6 @@
 # BAI
 Biased-Predicate Annotation Identification via Unbiased Visual Predicate Representation - ACM MM 2023
+[paper](https://dl.acm.org/doi/abs/10.1145/3581783.3611847)
 ![image](intro.png)
 ## Steps to get started
 To setup the environment, we use `conda` to manage our dependencies.
@@ -40,31 +41,28 @@ pip install -v -e .
 ```
 
 To explore and download their original Dataset:
-
-https://psgdataset.org/index.html
+[Original Dataset Website](https://psgdataset.org/index.html)
 
 Or you can directly download their original dataset using the link they provided: 
-
-https://entuedu-my.sharepoint.com/:f:/g/personal/jingkang001_e_ntu_edu_sg/EgQzvsYo3t9BpxgMZ6VHaEMBDAb7v0UgI8iIAExQUJq62Q?e=fIY3zh 
+[Original Dataset Link](https://entuedu-my.sharepoint.com/:f:/g/personal/jingkang001_e_ntu_edu_sg/EgQzvsYo3t9BpxgMZ6VHaEMBDAb7v0UgI8iIAExQUJq62Q?e=fIY3zh)
 
 And some pre-trained models that possibly be used:
-
-https://drive.google.com/drive/folders/1PY0JPCtkOS5Db8-CTFgORvWlOWsYiHfq?usp=sharing
-
+[Pre-trained Weights](https://drive.google.com/drive/folders/1PY0JPCtkOS5Db8-CTFgORvWlOWsYiHfq?usp=sharing)
 
 Our codebase accesses the datasets from `./data/` and pre-trained models from `./work_dirs/checkpoints/` by default.
 
 Our checkpoint for PSGTR is available at:
-
-https://drive.google.com/file/d/1P2W2PXdRVuv9o_MUSudY7cY0jC3i1xHa/view?usp=sharing
-
-Users should change the json filename in config/_base_/datasets/psg.py (Line 4-5) to './data/psg/psg.json'.
+[Enhanced PSGTR](https://drive.google.com/file/d/1P2W2PXdRVuv9o_MUSudY7cY0jC3i1xHa/view?usp=sharing)
 
 The enhanced training dataset (enhanced by BAI) is also provided:
-
-https://drive.google.com/file/d/16U5Cp20Z9K5FN2FR8w7qnT_YtVsHJb4J/view?usp=share_link
+[Enhanced training dataset](https://drive.google.com/file/d/16U5Cp20Z9K5FN2FR8w7qnT_YtVsHJb4J/view?usp=share_link)
 
 ![image](perform.png)
+
+## Preparation
+1. Download the [Original Dataset](https://entuedu-my.sharepoint.com/:f:/g/personal/jingkang001_e_ntu_edu_sg/EgQzvsYo3t9BpxgMZ6VHaEMBDAb7v0UgI8iIAExQUJq62Q?e=fIY3zh) to `./data/`.
+2. Unzip the coco.zip.
+3. Download some pre-trained models that possibly be used.
 
 ## Testing
 Run the scripts below:
@@ -75,4 +73,21 @@ configs/psgtr/psgtr_r50_psg.py \
 work_dirs/PATH_TO_PSGTR_CHECKPOINT \
 --eval sgdet
 ```
+Tips on how to evaluate our PSGTR checkpoint:
+1. Modify the variable "ann_file" in configs/_base_/datasets/psg.py (Line 4-5) to './data/psg/psg.json'. (psg.json includes the test set)
+2. Download our PSGTR checkpoint.
+3. Run the script above.
 
+## Training (Fine-tuning)
+Run the scripts below:
+```bash
+PYTHONPATH='.':$PYTHONPATH  \
+python tools/train.py  \
+configs/psgtr/psgtr_r50_psg.py \
+work_dirs/PATH_TO_PSGTR_CHECKPOINT \
+--launcher pytorch
+```
+Tips on how to do the fine-tuning (like for PSGTR):
+1. Download our enhanced [training dataset](https://drive.google.com/file/d/16U5Cp20Z9K5FN2FR8w7qnT_YtVsHJb4J/view?usp=share_link), and place the enhanced training dataset in `./data/`.
+2. Modify the variable "ann_file" in configs/_base_/datasets/psg.py (Line 4-5) to the path of the enhanced training dataset.
+3. Run the script above.
