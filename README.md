@@ -89,6 +89,6 @@ work_dirs/PATH_TO_PSGTR_CHECKPOINT \
 --launcher pytorch
 ```
 Tips on how to do the fine-tuning (like for PSGTR):
-1. Download our enhanced [training dataset](https://drive.google.com/file/d/16U5Cp20Z9K5FN2FR8w7qnT_YtVsHJb4J/view?usp=share_link), and place the enhanced training dataset in `./data/`.
+1. Download our enhanced [training dataset](https://drive.google.com/file/d/16U5Cp20Z9K5FN2FR8w7qnT_YtVsHJb4J/view?usp=share_link), and place the enhanced training dataset in `./data/psg/`.
 2. Modify the variable "ann_file" in configs/_base_/datasets/psg.py (Line 4-5) to the path of the enhanced training dataset.
 3. Run the script above.
