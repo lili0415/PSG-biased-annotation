@@ -76,7 +76,7 @@ work_dirs/PATH_TO_PSGTR_CHECKPOINT \
 ```
 Tips on how to evaluate our PSGTR checkpoint:
 1. Modify the variable "ann_file" in configs/_base_/datasets/psg.py (Line 4-5) to './data/psg/psg.json' (psg.json includes the test set).
-2. Download our PSGTR checkpoint.
+2. Download our PSGTR checkpoint and modify the `PATH_TO_PSGTR_CHECKPOINT` in the script..
 3. Run the script above.
 
 ## Training (Fine-tuning)
