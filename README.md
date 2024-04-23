@@ -3,7 +3,7 @@ Biased-Predicate Annotation Identification via Unbiased Visual Predicate Represe
 
 [paper](https://dl.acm.org/doi/abs/10.1145/3581783.3611847)
 ![image](intro.png)
-## Steps to get started
+## Environment Setting
 To setup the environment, we use `conda` to manage our dependencies.
 
 Our developers use `CUDA 10.1` to do experiments.
