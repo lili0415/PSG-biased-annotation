@@ -75,7 +75,7 @@ work_dirs/PATH_TO_PSGTR_CHECKPOINT \
 --eval sgdet
 ```
 Tips on how to evaluate our PSGTR checkpoint:
-1. Modify the variable "ann_file" in configs/_base_/datasets/psg.py (Line 4-5) to './data/psg/psg.json'. (psg.json includes the test set)
+1. Modify the variable "ann_file" in configs/_base_/datasets/psg.py (Line 4-5) to './data/psg/psg.json' (psg.json includes the test set).
 2. Download our PSGTR checkpoint.
 3. Run the script above.
 
