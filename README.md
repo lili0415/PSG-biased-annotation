@@ -60,6 +60,10 @@ https://drive.google.com/file/d/1P2W2PXdRVuv9o_MUSudY7cY0jC3i1xHa/view?usp=shari
 
 Users should change the json filename in config/_base_/datasets/psg.py (Line 4-5) to './data/psg/psg.json'.
 
+The enhanced training dataset (enhanced by BAI) is also provided:
+
+https://drive.google.com/file/d/16U5Cp20Z9K5FN2FR8w7qnT_YtVsHJb4J/view?usp=share_link
+
 ![image](perform.png)
 
 ## Testing
