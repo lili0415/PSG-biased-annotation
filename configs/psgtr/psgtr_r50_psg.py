@@ -207,7 +207,7 @@ optimizer_config = dict(grad_clip=dict(max_norm=0.1, norm_type=2))
 
 # learning policy
 lr_config = dict(policy='step', step=40)
-runner = dict(type='EpochBasedRunner', max_epochs=60)
+runner = dict(type='EpochBasedRunner', max_epochs=70)
 
 project_name = 'psgformer'
 expt_name = 'psgtr_r50_psg_0.5_scale_mask'
