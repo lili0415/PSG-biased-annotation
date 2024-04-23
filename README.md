@@ -1,4 +1,5 @@
 # BAI
+Biased-Predicate Annotation Identification via Unbiased Visual Predicate Representation - ACM MM 2023
 ![image](intro.png)
 ## Steps to get started
 To setup the environment, we use `conda` to manage our dependencies.
