@@ -1,8 +1,8 @@
-# BAI
-Biased-Predicate Annotation Identification via Unbiased Visual Predicate Representation - ACM MM 2023
+# Panoptic Scene Graph Biased Annotation
+<!-- Biased-Predicate Annotation Identification via Unbiased Visual Predicate Representation - ACM MM 2023
 
 [paper](https://dl.acm.org/doi/abs/10.1145/3581783.3611847)
-![image](intro.png)
+![image](intro.png) -->
 ## Environment Setting
 To setup the environment, we use `conda` to manage our dependencies.
 
